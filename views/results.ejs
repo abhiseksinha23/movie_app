@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MOVIE LISTS</title>
+  </head>
+  <body>
+    <h1>LIST OF MOVIES</h1>
+    <% data["Search"].forEach((movie) =>{ %>
+      <h3><li> Movie's Name: <%= movie["Title"] %> -
+      Year of Release: <%= movie["Year"] %></li></h3>
+    <% }) %>
+    <a href="/">Search Again</a>
+  </body>
+</html>
